@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96-v2.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192-v2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32-v2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180-v2.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0D2A47">
+<title>Sidan hittades inte — MarinrekondBC</title>
+<meta name="description" content="Tack för din förfrågan till MarinrekondBC. Vi återkommer normalt inom ett dygn med förslag på tid och pris.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --mist:#EFF5FA; --accent:#4A90C9; --navy-deep:#0D2A47; }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0; min-height:100vh; position:relative; overflow:hidden;
+    font-family:'Sora',sans-serif; color:var(--mist);
+    background:var(--navy-deep);
+    display:flex; align-items:center; justify-content:center;
+    padding:40px 24px; text-align:center;
+  }
+  body::before{
+    content:''; position:absolute; top:0; right:0; bottom:0; left:0; z-index:0;
+    background:url('/assets/hero-bg-sm.jpg') center 50% / cover no-repeat; background-image:image-set(url('/assets/hero-bg-sm.webp') type('image/webp'), url('/assets/hero-bg-sm.jpg') type('image/jpeg'));
+    filter:brightness(0.8);
+  }
+  body::after{
+    content:''; position:absolute; top:0; right:0; bottom:0; left:0; z-index:1;
+    background:
+      radial-gradient(ellipse 800px 600px at 50% 20%, rgba(74,144,201,0.28), transparent 62%),
+      linear-gradient(165deg, rgba(18,50,73,0.88) 0%, rgba(13,42,71,0.94) 55%, rgba(10,32,50,0.97) 100%);
+  }
+  .card{
+    position:relative; z-index:2; max-width:460px; width:100%;
+    background:rgba(10,26,42,0.55); border:1px solid rgba(239,245,250,0.14);
+    backdrop-filter:blur(6px);
+    padding:52px 40px 44px; box-shadow:0 30px 70px rgba(5,15,25,0.4);
+  }
+  .logo{margin-bottom:30px; display:inline-block;}
+  .logo img{height:72px; width:auto; display:block; margin:0 auto;}
+  .check{
+    width:52px; height:52px; margin:0 auto 26px; position:relative;
+    animation:pop .5s cubic-bezier(.2,.9,.25,1.2) .1s both;
+  }
+  .check svg{width:100%; height:100%;}
+  .check circle{
+    stroke:var(--accent); stroke-width:1.4; fill:none;
+    stroke-dasharray:145; stroke-dashoffset:145;
+    animation:draw 0.6s ease-out .35s forwards;
+  }
+  .check path{
+    stroke:var(--accent); stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round;
+    stroke-dasharray:24; stroke-dashoffset:24;
+    animation:draw 0.35s ease-out .75s forwards;
+  }
+  h1{
+    font-family:'Fraunces',serif; font-weight:500;
+    font-size:clamp(1.7rem, 5vw, 2.15rem); line-height:1.2; margin:0 0 14px;
+    animation:rise .6s cubic-bezier(.2,.9,.25,1.15) .12s both;
+  }
+  .lede{
+    font-size:1rem; line-height:1.65; color:rgba(239,245,250,0.82); margin:0 0 12px;
+    animation:rise .6s cubic-bezier(.2,.9,.25,1.15) .2s both;
+  }
+  .small{
+    font-size:0.85rem; line-height:1.6; color:rgba(239,245,250,0.5); margin:0 0 32px;
+    animation:rise .6s cubic-bezier(.2,.9,.25,1.15) .26s both;
+  }
+  .actions{
+    display:flex; flex-wrap:wrap; gap:12px; justify-content:center;
+    animation:rise .6s cubic-bezier(.2,.9,.25,1.15) .32s both;
+  }
+  .btn{
+    font-family:'Sora',sans-serif; font-size:0.9rem; font-weight:600;
+    padding:13px 24px; text-decoration:none; display:inline-block;
+    transition:background .2s ease, transform .12s ease; border:none; cursor:pointer;
+  }
+  .btn:active{transform:scale(0.97);}
+  .btn-solid{background:var(--accent); color:#0A2032;}
+  .btn-solid:hover{background:#5FA3D9;}
+  .btn-line{border:1px solid rgba(239,245,250,0.32); color:var(--mist); background:none;}
+  .btn-line:hover{background:rgba(239,245,250,0.08);}
+  .contact{
+    margin-top:36px; padding-top:26px; border-top:1px solid rgba(239,245,250,0.14);
+    font-size:0.85rem; color:rgba(239,245,250,0.55); line-height:1.9;
+    animation:rise .6s cubic-bezier(.2,.9,.25,1.15) .4s both;
+  }
+  .contact a{color:rgba(239,245,250,0.85); text-decoration:none;}
+  .contact a:hover{color:var(--accent);}
+  @keyframes rise{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
+  @keyframes pop{ from{opacity:0; transform:scale(0.7);} to{opacity:1; transform:scale(1);} }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  @media (max-width:480px){
+    .card{padding:40px 26px 34px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .check circle, .check path{animation:none; stroke-dashoffset:0;}
+    h1, .lede, .small, .actions, .contact{animation:none;}
+  }
+
+  /* ---------- Mjuka, rundade former ---------- */
+  .card{border-radius:20px;}
+  .btn{border-radius:12px;}
+</style>
+</head>
+<body>
+
+<main class="card">
+  <a class="logo" href="/"><img src="/assets/logo-light-v2.png" alt="MarinrekondBC" width="94" height="72"></a>
+
+  <h1>Här blev det grund vatten.</h1>
+  <p class="lede">Sidan du letar efter finns inte längre, eller så har länken blivit fel.</p>
+  <div class="actions">
+    <a class="btn btn-solid" href="/">Tillbaka till startsidan</a>
+    <a class="btn btn-line" href="/#paket">Se priser</a>
+  </div>
+  <div class="contact">
+    Behöver du oss snabbare?<br>
+    <a href="tel:+46728496426">072-849 64 26</a> ·
+    <a href="mailto:marinrekondbc@gmail.com">marinrekondbc@gmail.com</a>
+  </div>
+</main>
+
+</body>
+</html>

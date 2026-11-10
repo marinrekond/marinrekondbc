@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96-v2.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192-v2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32-v2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180-v2.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0D2A47">
+<title>Villkor för rekond av båt | MarinrekondBC</title>
+<meta name="description" content="MarinrekondBCs villkor för rekond, polering och vaxning av båtar: pris, betalning, ångerrätt, reklamation samt vad vi står för och vad vi inte kan ansvara för.">
+<link rel="canonical" href="https://marinrekondbc.se/villkor">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:url" content="https://marinrekondbc.se/villkor">
+<meta property="og:title" content="Villkor för rekond av båt | MarinrekondBC">
+<meta property="og:description" content="Vad vi står för, vad vi inte kan ansvara för och vad som gäller för pris, betalning, ångerrätt och reklamation.">
+<meta property="og:image" content="https://marinrekondbc.se/assets/og-share.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152436;
+    --navy-deep:#0D2A47;
+    --navy:#164374;
+    --mist:#EFF5FA;
+    --mist-alt:#E1EBF5;
+    --teal:#3D6C99;
+    --teal-deep:#245080;
+    --accent:#4A90C9;
+    --line: rgba(21,36,54,0.13);
+    --max: 1120px;
+    --read: 780px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  section{scroll-margin-top:96px;}
+  body{
+    margin:0; font-family:'Sora', sans-serif; color:var(--ink); background:var(--mist);
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:500; line-height:1.15; margin:0; letter-spacing:-0.01em;}
+  p{margin:0;}
+  a{color:var(--teal-deep);}
+  img,svg{display:block; max-width:100%;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  :focus-visible{outline:2px solid var(--teal); outline-offset:3px;}
+
+  /* ---------- Header (samma som startsidan) ---------- */
+  header{
+    position:sticky; top:0; z-index:50; background:rgba(239,245,250,0.92);
+    backdrop-filter:blur(6px); border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:18px 28px; max-width:var(--max); margin:0 auto;}
+  .logo{font-family:'Fraunces', serif; font-size:1.28rem; font-weight:600;}
+  .nav-links{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+  .nav-links .mobile-cta{display:none;}
+  .nav-links a{
+    text-decoration:none; font-size:0.95rem; font-weight:500; color:var(--ink);
+    padding-bottom:2px; border-bottom:1px solid transparent; transition:border-color .2s ease;
+  }
+  .nav-links a:hover, .nav-links a[aria-current="page"]{border-color:var(--teal);}
+  .nav-cta{
+    display:inline-block; background:var(--ink); color:var(--mist); padding:10px 20px; border-radius:12px;
+    text-decoration:none; font-size:0.92rem; font-weight:600; transition:transform .12s ease;
+  }
+  .nav-cta:active{transform:scale(0.96);}
+  .menu-btn{display:none; background:none; border:none; cursor:pointer; padding:10px; width:40px; height:40px; position:relative; z-index:60; flex-shrink:0;}
+  .menu-btn span{display:block; width:20px; height:2px; background:var(--ink); margin:5px auto; transition:transform .25s ease, opacity .2s ease;}
+  .menu-btn.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .menu-btn.open span:nth-child(2){opacity:0;}
+  .menu-btn.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  @media (max-width:640px){ .nav{padding:14px 20px;} .logo img{height:46px !important;} .wrap{padding:0 20px;} }
+  @media (max-width:940px){
+    .nav-cta{display:none;}
+    .menu-btn{display:block;}
+    .nav-links{
+      position:fixed; top:66px; left:0; right:0; z-index:55; flex-direction:column; gap:0;
+      background:var(--mist); border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; opacity:0; transition:max-height .3s ease, opacity .25s ease; padding:0 28px;
+    }
+    .nav-links.open{max-height:560px; opacity:1; padding:12px 28px 20px;}
+    .nav-links li{width:100%;}
+    .nav-links a{display:block; padding:14px 4px; border-bottom:1px solid var(--line); font-size:1.02rem;}
+    .nav-links li:last-child a{border-bottom:none;}
+    .nav-links .mobile-cta{display:block; margin-top:14px; text-align:center; background:var(--ink); color:var(--mist); text-decoration:none; padding:13px 20px; font-weight:600; font-size:0.95rem; border-radius:12px;}
+  }
+
+  /* ---------- Titel ---------- */
+  .page-head{padding:72px 0 36px;}
+  .page-head .inner{max-width:var(--read);}
+  .eyebrow{
+    display:inline-block; font-size:0.76rem; font-weight:600; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--teal-deep); background:var(--mist-alt); padding:6px 12px; border-radius:999px; margin-bottom:18px;
+  }
+  .page-head h1{font-size:clamp(2rem, 4.6vw, 3rem);}
+  .page-head .lede{margin-top:16px; font-size:1.06rem; color:rgba(21,36,54,0.72); max-width:60ch;}
+  .meta{margin-top:18px; font-size:0.86rem; color:rgba(21,36,54,0.55);}
+  .meta strong{color:rgba(21,36,54,0.75); font-weight:600;}
+
+  /* ---------- Sammanfattning ---------- */
+  .stand{padding:8px 0 24px;}
+  .stand-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:var(--max);}
+  .stand-card{border-radius:16px; padding:28px 28px 26px; border:1px solid var(--line); background:#F7FAFD;}
+  .stand-card.yes{border-color:rgba(61,108,153,0.35); background:linear-gradient(180deg,#F7FAFD,#EAF2F9);}
+  .stand-card h2{font-size:1.4rem; margin-bottom:14px;}
+  .stand-card ul{list-style:none; padding:0; margin:0; display:grid; gap:11px; font-size:0.94rem;}
+  .stand-card li{display:flex; gap:11px; align-items:flex-start;}
+  .stand-card li svg{width:18px; height:18px; flex:none; margin-top:3px; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+  .stand-card.yes svg{stroke:var(--teal-deep);}
+  .stand-card.no svg{stroke:#8A5A3B;}
+  @media (max-width:860px){ .stand-grid{grid-template-columns:1fr;} }
+
+  .notice{
+    max-width:var(--max); margin:8px 0 0; padding:24px 28px; background:#fff;
+    border:1px solid var(--line); border-left:5px solid var(--navy); border-radius:12px;
+  }
+  .notice h2{font-size:1.25rem; margin-bottom:10px;}
+  .notice ul{margin:0; padding-left:20px; display:grid; gap:7px; font-size:0.95rem;}
+
+  /* ---------- Innehåll ---------- */
+  .toc{padding:40px 0 8px;}
+  .toc h2{font-size:1.2rem; margin-bottom:14px;}
+  .toc ol{list-style:none; counter-reset:t; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:4px 28px; max-width:var(--read);}
+  .toc li{counter-increment:t;}
+  .toc a{display:block; padding:8px 0; border-bottom:1px solid var(--line); text-decoration:none; color:var(--ink); font-size:0.94rem;}
+  .toc a::before{content:counter(t) ". "; color:var(--teal-deep); font-weight:600;}
+  .toc a:hover{color:var(--teal-deep);}
+  @media (max-width:640px){ .toc ol{grid-template-columns:1fr;} }
+
+  .terms{padding:24px 0 80px;}
+  .term{max-width:var(--read); padding:36px 0 8px; border-bottom:1px solid var(--line);}
+  .term:last-child{border-bottom:none;}
+  .term h2{font-size:clamp(1.4rem, 2.6vw, 1.75rem); margin-bottom:16px; display:flex; gap:14px; align-items:baseline;}
+  .term h2 .n{font-family:'Sora',sans-serif; font-size:0.78rem; font-weight:600; color:var(--teal-deep); background:var(--mist-alt); border-radius:999px; padding:4px 10px; flex:none; position:relative; top:-3px;}
+  .term h3{font-family:'Sora',sans-serif; font-size:1rem; font-weight:600; margin:20px 0 8px;}
+  .term p{font-size:0.98rem; color:rgba(21,36,54,0.82); margin:0 0 14px;}
+  .term ul{margin:0 0 16px; padding-left:20px; display:grid; gap:8px; font-size:0.97rem; color:rgba(21,36,54,0.82);}
+  .term strong{color:var(--ink); font-weight:600;}
+  .term .small{font-size:0.86rem; color:rgba(21,36,54,0.6);}
+  .facts{width:100%; border-collapse:collapse; margin:4px 0 16px; font-size:0.95rem;}
+  .facts th, .facts td{text-align:left; padding:11px 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  .facts th{width:36%; font-weight:600; padding-right:16px;}
+  .callout{background:#fff; border:1px solid var(--line); border-radius:12px; padding:18px 22px; margin:6px 0 18px;}
+  .callout p:last-child{margin-bottom:0;}
+  .callout.warn{border-left:5px solid var(--navy);}
+
+  /* ---------- Sidfot ---------- */
+  footer{position:relative; overflow:hidden; background:var(--navy-deep); color:rgba(239,245,250,0.66); padding:40px 0; font-size:0.88rem;}
+  footer::before{
+    content:''; position:absolute; inset:0;
+    background:url('assets/mood-desktop.jpg') center 30% / cover no-repeat; background-image:image-set(url('assets/mood-desktop.webp') type('image/webp'), url('assets/mood-desktop.jpg') type('image/jpeg'));
+    opacity:0.16;
+  }
+  footer::after{content:''; position:absolute; inset:0; background:linear-gradient(180deg, var(--navy-deep) 0%, rgba(13,42,71,0.55) 100%);}
+  .footer-inner{position:relative; z-index:1; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
+  .footer-links{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+  .footer-links a{color:rgba(239,245,250,0.75); text-decoration:none; font-weight:500;}
+  .footer-links a:hover{color:#EFF5FA;}
+  .ig-link{display:flex; align-items:center; gap:7px;}
+
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+  @media print{
+    header, footer, .toc{display:none;}
+    body{background:#fff;}
+    .term{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><a href="index.html" aria-label="MarinrekondBC, till startsidan"><img src="assets/logo-v2.png" alt="MarinrekondBC" width="84" height="64" style="height:64px;width:auto;display:block;"></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#paket">Priser</a></li>
+      <li><a href="index.html#armband">Renare hav</a></li>
+      <li><a href="index.html#om-oss">Om oss</a></li>
+      <li><a href="index.html#process">Så går det till</a></li>
+      <li><a href="index.html#faq">Frågor</a></li>
+      <li><a href="villkor.html" aria-current="page">Villkor</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+      <li><a class="mobile-cta" href="index.html#kontakt">Begär offert</a></li>
+    </ul>
+    <a class="nav-cta" href="index.html#kontakt">Begär offert</a>
+    <button class="menu-btn" aria-label="Meny" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="inner">
+      <span class="eyebrow">Villkor</span>
+      <h1>Villkor för vår rekondtjänst.</h1>
+      <p class="lede">Så arbetar vi, vad du kan räkna med från oss och vad vi inte kan ansvara för. Läs igenom innan du tackar ja till en offert. Frågor är alltid välkomna.</p>
+      <p class="meta"><strong>Gäller från 28 oktober 2026.</strong> Villkoren gäller rekond, polering, vaxning och rengöring av båtar. De gäller inte CleanSea-armbanden.</p>
+    </div>
+  </div>
+</div>
+
+<section class="stand" aria-label="Sammanfattning">
+  <div class="wrap">
+    <div class="stand-grid">
+      <div class="stand-card yes">
+        <h2>Det här står vi för</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Arbete som utförs fackmässigt och med omsorg, med produkter som passar din båts ytor.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ett tydligt pris i skriftlig offert innan vi börjar, och inget extra utan att vi frågar dig först.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Att vi säger ärligt vad som är rimligt att förvänta sig av just din båt, innan arbetet startar.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Att vi rättar till fel i vårt arbete utan kostnad, och ersätter skador vi orsakar genom fel eller vårdslöshet.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Dina rättigheter enligt konsumenttjänstlagen. Våra villkor ger dig aldrig sämre skydd än lagen.</span></li>
+        </ul>
+      </div>
+      <div class="stand-card no">
+        <h2>Det här kan vi inte stå för</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Ett garanterat slutresultat. Rekond är ytvård, och vad som går att förbättra beror på ytans skick.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Skador och brister som fanns innan, eller svagheter i ytan som inte syns förrän den bearbetas.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Skador från väder, tredje part eller händelser utanför vår kontroll.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Reparationer av skrov, gelcoat, lack, inredning eller teknik. Det ingår inte i rekond.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Någon ansvarsförsäkring. Vi har ingen just nu, se <a href="#forsakring">avsnitt 11</a>.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-top:20px;">
+      <h2>Viktigt att veta innan du bokar</h2>
+      <ul>
+        <li><strong>MarinrekondBC har ingen ansvarsförsäkring i dagsläget.</strong> Orsakar vi en skada som vi ansvarar för betalar vi den själva. Läs mer i <a href="#forsakring">avsnitt 11</a>.</li>
+        <li><strong>Priset i kalkylatorn är en uppskattning.</strong> Det bindande priset står i den skriftliga offerten.</li>
+        <li><strong>Du har 14 dagars ångerrätt</strong> som privatperson, med några regler om när vi får börja arbeta. Se <a href="#angerratt">avsnitt 6</a>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Innehåll">
+  <div class="wrap">
+    <h2>Innehåll</h2>
+    <ol>
+      <li><a href="#om">Om villkoren</a></li>
+      <li><a href="#vilka">Vilka vi är</a></li>
+      <li><a href="#tjansten">Tjänsten</a></li>
+      <li><a href="#pris">Offert och pris</a></li>
+      <li><a href="#betalning">Bokning, betalning och avbokning</a></li>
+      <li><a href="#angerratt">Ångerrätt</a></li>
+      <li><a href="#din-del">Din del: uppgifter och tillträde</a></li>
+      <li><a href="#utforande">Utförande, tider och väder</a></li>
+      <li><a href="#reklamation">Genomgång och reklamation</a></li>
+      <li><a href="#ansvar">Ansvar och skador</a></li>
+      <li><a href="#forsakring">Försäkring</a></li>
+      <li><a href="#personuppgifter">Bilder och personuppgifter</a></li>
+      <li><a href="#foretag">Företag och båthallar</a></li>
+      <li><a href="#tvister">Tvister och lagval</a></li>
+      <li><a href="#andringar">Ändringar av villkoren</a></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="terms">
+  <div class="wrap">
+
+    <section class="term" id="om">
+      <h2><span class="n">1</span>Om villkoren</h2>
+      <p>Villkoren gäller när MarinrekondBC utför rekond, polering, vaxning, rengöring och liknande ytvård av fritidsbåtar åt dig. De blir en del av avtalet när du godkänner vår offert. Vi hänvisar till dem i varje offert, och de finns alltid här på sidan.</p>
+      <p><strong>Armbanden omfattas inte.</strong> CleanSea-armbanden som säljs på vår sida är en egen försäljning och omfattas inte av dessa villkor.</p>
+      <p><strong>Privatpersoner.</strong> Beställer du som privatperson för privat bruk gäller konsumenttjänstlagen. Villkoren ger dig aldrig sämre rättigheter än lagen. Om något i villkoren skulle strida mot tvingande lag gäller lagen i stället.</p>
+      <p><strong>Företag.</strong> Beställer du som företag, båthall eller organisation gäller även <a href="#foretag">avsnitt 13</a>.</p>
+    </section>
+
+    <section class="term" id="vilka">
+      <h2><span class="n">2</span>Vilka vi är</h2>
+      <table class="facts">
+        <tr><th scope="row">Namn</th><td>MarinrekondBC</td></tr>
+        <tr><th scope="row">Verksamhet</th><td>Mobil båtrekond i Stockholmsområdet: vid bryggan, i hamnen eller i båthallen.</td></tr>
+        <tr><th scope="row">E-post</th><td><a href="mailto:marinrekondbc@gmail.com">marinrekondbc@gmail.com</a></td></tr>
+        <tr><th scope="row">Telefon</th><td><a href="tel:+46728496426">072-849 64 26</a></td></tr>
+      </table>
+    </section>
+
+    <section class="term" id="tjansten">
+      <h2><span class="n">3</span>Tjänsten</h2>
+      <p>Vi utför det som står i offerten. Det som inte står i offerten ingår inte.</p>
+      <p><strong>Rekond är ytvård.</strong> Vi rengör, polerar och vaxar för att få tillbaka glans och skydda ytorna. Det är inte reparation av skrov, gelcoat, lack, inredning eller teknik, och vi bedömer inte båtens sjövärdighet eller tekniska skick.</p>
+      <p><strong>Resultatet beror på skicket.</strong> Hur mycket som går att förbättra beror på ytans material, ålder och slitage. Djupa repor, genomslitna ytor, missfärgningar som sitter under ytan, kraftig oxidation, osmos och korrosion kan vi ofta bara förbättra, inte ta bort. Vi går igenom vad som är rimligt att förvänta sig innan vi börjar, och vi lovar inget slutresultat som inte står i offerten.</p>
+      <p><strong>Vi väljer metod och medel.</strong> Vi anpassar metod, polermedel och vax efter ytan. Ser vi att ett område inte tål viss bearbetning berättar vi det och kan avstå från just det området.</p>
+    </section>
+
+    <section class="term" id="pris">
+      <h2><span class="n">4</span>Offert och pris</h2>
+      <p>Kalkylatorn på startsidan ger ett <strong>uppskattat pris</strong>. Det bindande priset är det som står i den skriftliga offerten eller prisbekräftelsen som vi skickar innan arbetet börjar, via e-post eller sms.</p>
+      <p>Offerten anger vad som ingår, plats och tid, om priset är fast eller ungefärligt, om momsen ingår, hur stor handpenningen är och hur länge offerten gäller. Priset beror bland annat på båtens längd, skick och hur lätt vi kommer åt den.</p>
+      <p><strong>Ungefärligt pris.</strong> Anges priset som ett uppskattat pris (överslag) får det slutliga priset inte bli mer än 15 procent högre, enligt konsumenttjänstlagen. Visar det sig att arbetet blir mer omfattande hör vi av oss innan vi går vidare.</p>
+      <p><strong>Tilläggsarbete.</strong> Vi gör inget extra utan att fråga dig först. Ser vi något som borde göras samtidigt, eller något som inte kan vänta utan risk för skada, kontaktar vi dig och väntar på ditt besked. Du betalar bara för tilläggsarbete som du godkänt, om inte konsumenttjänstlagen säger något annat.</p>
+    </section>
+
+    <section class="term" id="betalning">
+      <h2><span class="n">5</span>Bokning, betalning och avbokning</h2>
+      <p><strong>Avtal.</strong> Avtalet ingås när du godkänner offerten, till exempel genom att svara ja via e-post eller sms. Ditt godkännande innebär att du tagit del av dessa villkor, inklusive <a href="#forsakring">avsnittet om försäkring</a>.</p>
+      <p><strong>Handpenning.</strong> Vi tar en handpenning innan arbetet utförs. Beloppet står i offerten och dras av från slutpriset.</p>
+      <p><strong>Resten.</strong> Resten betalar du på plats eller mot faktura när båten är klar. Förfallodag står på fakturan. Vid försenad betalning har vi rätt till dröjsmålsränta enligt räntelagen och till de påminnelseavgifter som lagen tillåter.</p>
+      <p><strong>Avbokning och ombokning.</strong> Du kan avboka eller boka om utan kostnad fram till 48 timmar före avtalad tid. Avbokar du senare har vi rätt till skälig ersättning för den förlust vi får, dock högst handpenningens belopp. Hör av dig så fort du vet att du inte kan, så hittar vi gärna en ny tid. Dina rättigheter enligt lag, bland annat ångerrätten, påverkas inte.</p>
+      <p><strong>Om vi ställer in.</strong> Måste vi ställa in får du en ny tid. Passar ingen ny tid betalar vi tillbaka handpenningen.</p>
+    </section>
+
+    <section class="term" id="angerratt">
+      <h2><span class="n">6</span>Ångerrätt för privatpersoner</h2>
+      <p>När du som privatperson beställer av oss utan att vi träffats i en butik eller lokal, till exempel via formulär, e-post, telefon eller när vi är hos dig vid båten, har du 14 dagars ångerrätt. Fristen räknas från den dag du godkänner offerten.</p>
+      <h3>Så ångrar du dig</h3>
+      <p>Meddela oss tydligt inom fristen, till exempel genom ett e-postmeddelande till <a href="mailto:marinrekondbc@gmail.com">marinrekondbc@gmail.com</a>. Du kan använda Konsumentverkets standardformulär för ångerrätt, men du måste inte. Vi skickar formuläret om du ber om det. Har vi inte börjat arbeta betalar vi tillbaka det du betalat senast 14 dagar efter att du meddelat oss.</p>
+      <h3>Vill du att vi börjar inom 14 dagar</h3>
+      <p>Vill du att arbetet ska utföras inom ångerfristen måste du uttryckligen be oss om det, till exempel genom att i ditt godkännande skriva att du vill att arbetet påbörjas inom ångerfristen.</p>
+      <ul>
+        <li><strong>Ångrar du dig efter att vi börjat</strong> betalar du för den del av arbetet som hunnit utföras, i proportion till hela priset.</li>
+        <li><strong>Är arbetet helt utfört</strong> kan du inte längre ångra dig, om du uttryckligen bett oss utföra det inom ångerfristen och bekräftat att du då förlorar ångerrätten när arbetet är klart.</li>
+      </ul>
+    </section>
+
+    <section class="term" id="din-del">
+      <h2><span class="n">7</span>Din del: uppgifter och tillträde</h2>
+      <p>För att vi ska kunna göra ett bra jobb behöver vi att du:</p>
+      <ul>
+        <li><strong>äger båten eller har ägarens tillstånd</strong> att beställa arbetet.</li>
+        <li><strong>ger oss riktiga uppgifter om båten:</strong> storlek, material, skick, tidigare behandlingar samt kända skador och brister. Berätta särskilt om sådant som kan vara känsligt vid polering, till exempel tunn eller omlackerad gelcoat och tidigare lagningar.</li>
+        <li><strong>ser till att vi kommer åt båten</strong> på överenskommen tid, vid bryggan, i hamnen eller i båthallen, och har ordnat de tillstånd som marinan eller hallen kräver. Marinans eller hallens egna regler gäller.</li>
+        <li><strong>tar undan värdesaker och lösa tillhörigheter</strong> som kan komma i vägen eller skadas.</li>
+        <li><strong>går att nå</strong> under arbetet om vi behöver ställa en fråga. Du behöver inte vara på plats.</li>
+      </ul>
+    </section>
+
+    <section class="term" id="utforande">
+      <h2><span class="n">8</span>Utförande, tider och väder</h2>
+      <p>Vi utför arbetet fackmässigt och med omsorg.</p>
+      <p><strong>Väder.</strong> Vi arbetar utomhus, och polering och vaxning kräver torrt väder. Hindrar vädret arbetet bokar vi om till närmast lämpliga tillfälle utan extra kostnad för dig.</p>
+      <p><strong>Tider.</strong> Vi håller avtalad tid. Blir vi förhindrade, till exempel av sjukdom, hör vi av oss så snart vi vet och erbjuder en ny tid. Blir förseningen väsentlig har du de rättigheter som konsumenttjänstlagen ger, bland annat att häva avtalet.</p>
+      <p><strong>Hinder utanför vår kontroll.</strong> Väder, sjukdom, olyckor, myndighetsbeslut och andra händelser utanför vår kontroll som hindrar oss är inte dröjsmål från vår sida, så länge vi hör av oss och erbjuder ny tid.</p>
+      <p><strong>Kommer vi inte åt båten.</strong> Står vi på plats men kan inte utföra arbetet för att vi inte kommer åt båten har vi rätt till skälig ersättning för bortkörd tid.</p>
+    </section>
+
+    <section class="term" id="reklamation">
+      <h2><span class="n">9</span>Genomgång och reklamation</h2>
+      <p>När vi är klara gör vi en genomgång med dig och skickar en kvittens på vad som gjorts. Är du inte på plats, titta igenom resultatet så snart du kan.</p>
+      <p><strong>Är du inte nöjd, säg det direkt.</strong> Vi rättar till fel som beror på vårt arbete utan kostnad för dig.</p>
+      <p><strong>Reklamation.</strong> Du ska reklamera fel inom skälig tid efter att du upptäckt eller borde ha upptäckt det. Reklamerar du inom två månader från att du upptäckte felet är det alltid i tid. Senast tre år efter att arbetet utförts måste du ha reklamerat. Skriv till <a href="mailto:marinrekondbc@gmail.com">marinrekondbc@gmail.com</a>, beskriv vad som är fel och bifoga gärna bilder.</p>
+      <p><strong>Dina rättigheter.</strong> Är arbetet felaktigt har du, när förutsättningarna i konsumenttjänstlagen är uppfyllda, rätt att hålla inne betalning, kräva att felet rättas, kräva prisavdrag, häva avtalet och kräva skadestånd.</p>
+      <p><strong>Vad som inte är fel.</strong> Att resultatet begränsas av båtens skick är inte ett fel i vårt arbete om vi sagt det i förväg eller om det är normalt för ytan. Se <a href="#tjansten">avsnitt 3</a> och <a href="#ansvar">avsnitt 10</a>.</p>
+      <p>Utöver det som följer av lag och av det vi lovat i offerten lämnar vi ingen särskild garanti.</p>
+    </section>
+
+    <section class="term" id="ansvar">
+      <h2><span class="n">10</span>Ansvar och skador</h2>
+      <h3>Det här ansvarar vi för</h3>
+      <p>Orsakar vi skada på din båt eller annan egendom som du äger, genom fel i arbetet eller vårdslöshet, ersätter vi skadan enligt konsumenttjänstlagen. Det kan inte begränsas av dessa villkor.</p>
+      <h3>Det här kan vi inte ansvara för</h3>
+      <p>I följande fall svarar vi inte för skada eller brist, förutsatt att den inte beror på fel eller vårdslöshet från vår sida:</p>
+      <ul>
+        <li><strong>Skador och brister som fanns innan vi började:</strong> repor, sprickor, osmos, korrosion, tidigare lagningar samt lack eller gelcoat som redan var tunn, spröd eller dåligt vidhäftande.</li>
+        <li><strong>Dolda svagheter som visar sig först när ytan bearbetas</strong>, trots att vi arbetat fackmässigt och försiktigt. Det gäller till exempel gammal, oxiderad eller tunn gelcoat eller lack som slipas igenom vid polering, vilket är en inneboende risk. Ser vi tecken på det i förväg berättar vi det för dig.</li>
+        <li><strong>Skador som beror på att uppgifter du lämnat är felaktiga eller ofullständiga.</strong></li>
+        <li><strong>Skador som orsakas av väder, tredje part, marinan eller hallen,</strong> eller av händelser utanför vår kontroll, samt vad som händer med båten efter att vi lämnat den, till exempel stöld och vandalism.</li>
+        <li><strong>Normalt slitage och hur länge resultatet håller.</strong> Hållbarheten hos vax och ytskydd beror på användning, väder och hur båten tvättas.</li>
+        <li><strong>Värdesaker och personliga tillhörigheter</strong> som lämnats i båten.</li>
+        <li><strong>Att resultatet blir perfekt</strong> eller blir som du hoppats, om vi inte lovat det i offerten.</li>
+      </ul>
+    </section>
+
+    <section class="term" id="forsakring">
+      <h2><span class="n">11</span>Försäkring</h2>
+      <div class="callout warn">
+        <p><strong>MarinrekondBC har för närvarande ingen ansvarsförsäkring.</strong></p>
+        <p>Orsakar vi en skada som vi är ansvariga för är det MarinrekondBC som själva betalar den. Det finns ingen försäkring som täcker skadan utöver det.</p>
+      </div>
+      <p>Kontrollera gärna med ditt försäkringsbolag vad din egen båtförsäkring omfattar när någon annan arbetar på båten. Vi uppdaterar den här texten om vi tecknar en ansvarsförsäkring.</p>
+      <p>Genom att godkänna offerten bekräftar du att du tagit del av detta.</p>
+    </section>
+
+    <section class="term" id="personuppgifter">
+      <h2><span class="n">12</span>Bilder och personuppgifter</h2>
+      <p><strong>Bilder.</strong> Vi kan ta bilder före och efter för att dokumentera arbetet. Vi publicerar inte bilder där din båt kan identifieras utan att du godkänt det.</p>
+      <h3>Integritetspolicy</h3>
+      <p>MarinrekondBC samlar in de uppgifter du själv lämnar, till exempel namn, telefon, e-post och uppgifter om båten, för att kunna svara på din förfrågan, ge en offert och utföra uppdraget. Uppgifterna delas inte med tredje part och sparas endast så länge det behövs för att hantera ditt ärende, med de undantag som följer av lag, till exempel bokföringskrav.</p>
+      <p>Du kan när som helst be oss radera dina uppgifter genom att kontakta oss på <a href="mailto:marinrekondbc@gmail.com">marinrekondbc@gmail.com</a>. Sajten använder inga spårningscookies för marknadsföring.</p>
+    </section>
+
+    <section class="term" id="foretag">
+      <h2><span class="n">13</span>Företag och båthallar</h2>
+      <p>Beställer du som företag, båthall eller organisation gäller villkoren ovan i tillämpliga delar, men konsumenttjänstlagen gäller inte. I stället gäller följande:</p>
+      <ul>
+        <li>Vi ansvarar för <strong>direkt skada</strong> som vi orsakar genom fel eller vårdslöshet. Vi ansvarar inte för indirekt skada, till exempel utebliven vinst, förlorad uthyrning eller intäktsbortfall.</li>
+        <li>Vårt sammanlagda skadeståndsansvar för ett uppdrag är begränsat till uppdragets pris.</li>
+        <li>Reklamation ska ske <strong>utan oskäligt dröjsmål</strong> och senast 14 dagar efter att felet upptäcktes, och senast ett år efter att arbetet utfördes.</li>
+        <li>Särskilda villkor i ett skriftligt samarbetsavtal med oss går före dessa villkor.</li>
+      </ul>
+      <p>Läs mer om hur vi samarbetar med båthallar på <a href="samarbete-foretag.html">sidan för företag</a>.</p>
+    </section>
+
+    <section class="term" id="tvister">
+      <h2><span class="n">14</span>Tvister och lagval</h2>
+      <p>Hör av dig till oss först, så försöker vi lösa det. De flesta frågor går att lösa genom ett samtal.</p>
+      <p>På avtalet tillämpas svensk lag. Som privatperson kan du få en tvist prövad av <a href="https://www.arn.se" target="_blank" rel="noopener">Allmänna reklamationsnämnden (ARN)</a> eller av allmän domstol. Du kan också få råd av Konsumentverket och din kommuns konsumentvägledning.</p>
+    </section>
+
+    <section class="term" id="andringar">
+      <h2><span class="n">15</span>Ändringar av villkoren</h2>
+      <p>Vi kan uppdatera villkoren. För varje uppdrag gäller de villkor som fanns på sidan när du godkände offerten.</p>
+      <p class="small">Senast uppdaterad 28 oktober 2026.</p>
+    </section>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="logo"><img src="assets/logo-light-v2.png" alt="MarinrekondBC" width="84" height="64" loading="lazy" style="height:64px;width:auto;display:block;"></div>
+    <div>Rekond av båtar i Stockholm</div>
+    <div class="footer-links">
+      <a href="index.html">Till startsidan</a>
+      <a href="#personuppgifter">Integritetspolicy</a>
+      <a href="https://instagram.com/marinrekondbc" target="_blank" rel="noopener" class="ig-link" aria-label="Följ oss på Instagram">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        <span>@marinrekondbc</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    try {
+      var btn = document.querySelector('.menu-btn');
+      var links = document.querySelector('.nav-links');
+      if (!btn || !links) return;
+      btn.addEventListener('click', function(){
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      links.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          links.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    } catch(e) { console.error('Menu error:', e); }
+  })();
+</script>
+</body>
+</html>

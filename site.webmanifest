@@ -1,0 +1,11 @@
+{
+  "name": "MarinrekondBC",
+  "short_name": "MarinrekondBC",
+  "icons": [
+    { "src": "/assets/favicon-192-v2.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/favicon-512-v2.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0D2A47",
+  "background_color": "#0D2A47",
+  "display": "browser"
+}

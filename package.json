@@ -1,0 +1,10 @@
+{
+  "name": "marinrekondbc-hemsida",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marinrekond BC hemsida med CleanSea-webbshop (Stripe Checkout via Netlify Functions)",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

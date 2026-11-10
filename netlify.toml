@@ -1,0 +1,31 @@
+# Netlify-inställningar för marinrekondbc.se
+# Hemsidan ligger i projektets rotmapp och serverfunktionerna i netlify/functions.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Håll källkod och konfiguration borta från den publika webbplatsen.
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package.json"
+  to = "/404.html"
+  status = 404
+  force = true
