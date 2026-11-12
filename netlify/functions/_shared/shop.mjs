@@ -8,7 +8,7 @@ export const SIZES = ['S', 'M', 'L'];
 export const MAX_PER_SIZE = 10; // max antal per storlek i en beställning
 export const MAX_TOTAL = 30; // max antal armband totalt i en beställning
 export const SOURCE = 'marinrekondbc-cart'; // märker sessioner som kommer från den här varukorgen
-export const PRODUCT_LABEL = 'CleanSea Wavy Havsblå & Saltvit';
+export const PRODUCT_LABEL = 'Action Taker 1 KG - Havsblå & Saltvit';
 export const DEFAULT_SHIPPING_SEK = 29;
 
 const STRIPE_API = 'https://api.stripe.com/v1';
